@@ -10,26 +10,25 @@ import javax.persistence.Table;
 import lombok.Data;
 
 /**
- * 系统账号信息表
+ * 学生信息表
  */
 @Data
 @Entity
-@Table(name = "user")
-public class User {
-
+@Table(name = "student")
+public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // 自增主键
 	private Long id;
-
+	
 	@Column(name = "name")
 	private String name;
-	@Column(name = "login_name")
-	private String loginName;
-	@Column(name = "password")
-	private String password;
-	@Column(name = "description")
-	private String description;
-	@Column(name = "phone")
-	private String phone;
-
+	@Column(name = "sex")
+	private String sex;
+	@Column(name = "address")
+	private String address;
+	@Column(name = "class_id")
+	private Long classId;//班级外键
+	@Column(name = "image")
+	private String image;
+	
 }
