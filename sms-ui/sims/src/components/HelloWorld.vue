@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
      <h1>{{ msg }}</h1>
-    <el-input v-model="input" placeholder="请输入内容" />
+
+    <router-view></router-view>
   </div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      input: "hello"
+      input: 'hello'
     }
   }
 }
