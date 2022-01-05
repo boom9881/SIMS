@@ -14,8 +14,8 @@ import lombok.Data;
  */
 @Data
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "tt_userInfo")
+public class UserInfo {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // 自增主键

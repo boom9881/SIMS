@@ -1,12 +1,12 @@
 package com.tt.sms.controller;
 
-import com.tt.sms.dao.ClassRepository;
+import com.tt.sms.dao.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ClassController {
+public class RoleController {
 
     @Autowired
-    ClassRepository classRepository;
+    RoleRepository roleRepository;
 }

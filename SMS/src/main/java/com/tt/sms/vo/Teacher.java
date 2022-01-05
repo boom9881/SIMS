@@ -1,21 +1,16 @@
 package com.tt.sms.vo;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 import lombok.Data;
+
+import javax.persistence.*;
 
 /**
  * 学生信息表
  */
 @Data
 @Entity
-@Table(name = "tt_student")
-public class Student {
+@Table(name = "tt_teacher")
+public class Teacher {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // 自增主键
 	private Long id;
@@ -30,7 +25,9 @@ public class Student {
 	private Long classId;//班级外键
 	@Column(name = "image")
 	private String image;
-	@Column(name = "parentContactPhone")
-	private String parentContactPhone;
+	@Column(name = "contactPhone")
+	private String contactPhone;
+	@Column(name = "position")
+	private String position;
 	
 }
