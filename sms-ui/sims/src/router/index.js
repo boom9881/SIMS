@@ -49,11 +49,11 @@ export default new Router({
           name: 'role',
           component: role
         },
-        {
-          path: '/userInfo',
-          name: 'userInfo',
-          component: userInfo
-        }
+        // {
+        //   path: '/userInfo',
+        //   name: 'userInfo',
+        //   component: userInfo
+        // }
       ]
     },
   ]

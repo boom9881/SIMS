@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'// 引入element-ui的样式文件
+
+Vue.prototype.$axios = axios    //全局注册，使用方法为:this.$axios
 
 Vue.use(ElementUI)// 通过这个命令使所有的element-ui标签(<el-*></el-*>)可被解析
 

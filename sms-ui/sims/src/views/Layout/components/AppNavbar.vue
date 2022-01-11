@@ -31,10 +31,10 @@
           <i class="el-icon-menu"></i>
           <span slot="title">角色管理</span>
         </el-menu-item>
-        <el-menu-item index="7" @click="changeMenu('userInfo')">
-          <i class="el-icon-menu"></i>
-          <span slot="title">个人信息</span>
-        </el-menu-item>
+<!--        <el-menu-item index="7" @click="changeMenu('userInfo')">-->
+<!--          <i class="el-icon-menu"></i>-->
+<!--          <span slot="title">个人信息</span>-->
+<!--        </el-menu-item>-->
       </el-menu>
     </el-row>
   </div>
